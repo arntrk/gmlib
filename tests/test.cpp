@@ -1,7 +1,7 @@
 
-#include <catch.hpp>
+#include <catch2/catch.hpp>
 
-#include <BSplineBasis.h>
+#include <BSplineBasis.hpp>
 #include <vector>
 
 
