@@ -1,6 +1,6 @@
 #include "myWindowClass.h"
 
-#include "BSplineBasis.h"
+#include "BSplineBasis.hpp"
 #include "KnotVector.h"
 
 #include "OpenGLShader.hpp"
@@ -110,12 +110,12 @@ void myWindowClass::initialize()
     cad::KnotVector<float> knots(-0.5, 0.5, 4);
 
     // insert points in the interval [-0.5, 0.5], multiplicity is allowed
-    //knots.insert(-0.375);
-    //knots.insert(-0.25);
+    knots.insert(-0.375);
+    knots.insert(-0.25);
     //knots.insert(-0.125);
     knots.insert(0.0);
     //knots.insert(0.125);
-    //knots.insert(0.25);
+    knots.insert(0.25);
     //knots.insert(0.375);
     
     /**
