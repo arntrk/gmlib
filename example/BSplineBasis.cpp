@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <vector>
-#include <BSplineBasis.h>
+#include <BSplineBasis.hpp>
 #include <KnotVector.h>
 #include <myWindowClass.h>
 
