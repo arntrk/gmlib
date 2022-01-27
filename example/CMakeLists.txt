@@ -19,5 +19,5 @@ target_link_libraries(BSplineBasis
     PUBLIC
         glfw
         GLEW::GLEW
-        gmlib
+        gmlib::gmlib
 )

@@ -4,11 +4,17 @@ from conan.tools.cmake import CMakeDeps
 import re
 import os
 
+def get_version():
+    try:
+        return re.search(r"project\(\S+ VERSION (\d\.\d(\.\d)?).*\)", load("CMakeLists.txt")).group(1).strip()
+    except Exception:
+        return None
+
 
 class ConanrRecepie(ConanFile):
     name = "gmlib"
     url = "https://github.com/arntrk/gmlib.git"
-    version = "0.0.2"
+    version = get_version()
     exports = "README.md"
     settings = "os", "compiler", "build_type", "arch"
 
