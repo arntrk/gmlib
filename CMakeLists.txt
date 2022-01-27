@@ -11,8 +11,6 @@ include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
 
 add_library(${PROJECT_NAME} INTERFACE)
 
-# target_link_libraries()
-
 target_include_directories(${PROJECT_NAME}
     INTERFACE
         $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>

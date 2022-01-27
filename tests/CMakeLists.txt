@@ -8,6 +8,6 @@ add_executable(${PROJECT_NAME}tests
 )
 
 target_link_libraries(${PROJECT_NAME}tests
-    SplineBasis
+    gmlib
     catch2::catch2
 )
