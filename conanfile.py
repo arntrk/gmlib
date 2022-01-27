@@ -5,10 +5,10 @@ import re
 import os
 
 
-class SentryRWSConan(ConanFile):
-    name = "sentry-rws"
-    url = "https://github.com/arntrk/SplineBasis.git"
-    version = "0.0.1"
+class ConanrRecepie(ConanFile):
+    name = "gmlib"
+    url = "https://github.com/arntrk/gmlib.git"
+    version = "0.0.2"
     exports = "README.md"
     settings = "os", "compiler", "build_type", "arch"
 
